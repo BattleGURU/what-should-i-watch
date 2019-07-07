@@ -19,7 +19,9 @@ interface MovieData {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Mit Nézzek Ma?';
+  title1 = 'Mit';
+  title2 = 'Nézzek';
+  title3 = 'Ma?';
   baseLink = 'http://www.omdbapi.com?apikey=17d588da&plot=full';
   movieData = {};
 

@@ -3,8 +3,13 @@
   <h1>
     {{ title }}
   </h1>
-  <input type="text" #input id="input">
+  <input type="text" #input>
 <button id="button" (click)="sendMeMovie(input.value)">Send</button>
+<div id="titleContainer">
+<p class="title-frag">{{title1}}</p>
+<p class="title-frag">{{title2}}</p>
+<p class="title-frag">{{title3}}</p>
+</div>
 <div *ngIf="movieData.Title" style="margin-top:20px">
   <img [src]="movieData.Poster">
   <h3>{{movieData.Title}}</h3>
