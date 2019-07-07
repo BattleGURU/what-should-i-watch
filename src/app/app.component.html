@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+  <input type="text" #input id="input">
+<button id="button" (click)="sendMeMovie(input.value)">Send</button>
+<div *ngIf="movieData.Title" style="margin-top:20px">
+  <img [src]="movieData.Poster">
+  <h3>{{movieData.Title}}</h3>
+  <span>/{{movieData.Year}}/</span>
+  <p>
+    {{movieData.Plot}}
+  </p>
+  <b>{{movieData.imdbRating}}</b>
+</div>
+</div>
+
+
+<router-outlet></router-outlet>
